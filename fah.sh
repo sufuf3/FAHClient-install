@@ -43,7 +43,7 @@ AUTOSTART=true
 # Configuring fahclient end
 ####################
 
-apt-get install -y debconf-utils
+sudo apt-get install -y debconf-utils
 cd $DIR
 wget --no-check-certificate $URL
 echo "fahclient fahclient/autostart boolean $AUTOSTART" | sudo debconf-set-selections
@@ -51,5 +51,5 @@ echo "fahclient fahclient/power select $POWER" | sudo debconf-set-selections
 echo "fahclient fahclient/team string $TEAM" | sudo debconf-set-selections
 echo "fahclient fahclient/passkey string $PASSKEY" | sudo debconf-set-selections
 echo "fahclient fahclient/user string $USER" | sudo debconf-set-selections
-dpkg -i fahclient_7.4.4_amd64.deb
+sudo dpkg -i fahclient_7.4.4_amd64.deb
 rm -f fahclient_7.4.4_amd64.deb
