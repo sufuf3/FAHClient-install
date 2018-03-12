@@ -1,6 +1,6 @@
 #!/bin/sh
 # A script to install and running Folding@Home
-# Author: Monisan Fu(@sufuf3)
+# Author: Samina Fu(@sufuf3)
 # date:20170331
 #
 # OS: Ubuntu
